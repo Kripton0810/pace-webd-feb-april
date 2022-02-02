@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="datam.php" method="post">
+        <label for="name">Name</label> <input type="text" name="name" id="name" placeholder="Enter your name"
+            required=""><br>
+        <label for="roll">Roll No.: </label> <input type="number" name="roll" id="roll" required=""
+            placeholder="Enter your roll number"><br>
+        <label for="dob">Date of Birth</label> <input type="date" name="dob" id="dob" required=""
+            placeholder="Enter your dob"><br>
+        <label for="email">Email</label> <input type="email" name="email" id="email" required=""
+            placeholder="Enter your email"><br>
+        <label for="password">Enter your password</label> <input type="password" name="password" id="password"
+            required="" placeholder="Enter your password"><br>
+        <label>Gender: </label> <label for="m-g">Male</label> <input type="radio" name="gender" value="male"
+            id="m-g"><label for="m-f">Female</label> <input type="radio" value="female" name="gender" id="m-f"><br>
+        <label>Select your car: </label> <label for="bmw">BMW</label> <input type="checkbox" name="car" id="bmw">
+        <label for="lam">Lambo</label> <input type="checkbox" name="car" id="lam">
+        <label for="ms">Maruti</label> <input type="checkbox" name="car" id="ms"><br>
+        <label for="cars">Cars</label> <select id="cars" name="opt_car" required="">
+
+            <option value="12312">Car</option>
+            <option value="12323">Maruti</option>
+            <option value="12343">BMW</option>
+            <option value="12342">KTM</option>
+            <option value="12345">Duke</option>
+        </select><br>
+        <label>Datalist : </label><input list="list">
+        <datalist id="list">
+            <option value="12312">Car</option>
+            <option value="12323">Maruti</option>
+            <option value="12343">BMW</option>
+            <option value="12342">KTM</option>
+            <option value="12345">Duke</option>
+        </datalist>
+        <input type="submit">
+    </form>
+    <video width="400" controls>
+        <source src="./images/myvideo.mp4" type="video/mp4">
+        Your borwser does not support this
+    </video>
+    <audio controls>
+        <source src="./images/myaudio.mp3" type="audio/mp3">
+        Your borwser does not suppor audio
+    </audio>
+</body>
+
+</html>
