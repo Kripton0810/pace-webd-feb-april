@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        width: 4px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+      }
+      ::-webkit-scrollbar-thumb {
+        width: 3px;
+        background-color: rgb(222, 195, 248);
+        border-radius: 20px;
+      }
+      body {
+        background: url("https://wallpapercave.com/wp/wp2587127.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .cont {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      header {
+        width: 100%;
+        height: 70px;
+        position: sticky;
+        top: 0;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.671);
+      }
+      .logo {
+        width: 9%;
+      }
+      .logo img {
+        width: 100%;
+        height: 100%;
+      }
+      .flex {
+        display: flex;
+      }
+      .search-wraper {
+        width: 100%;
+      }
+      .src-btn {
+        background-color: aliceblue;
+        padding: 5px 15px;
+        font-size: 1.4rem;
+        cursor: pointer;
+        border: 1px solid gainsboro;
+      }
+      .search {
+        width: 35%;
+      }
+      .search-wraper input {
+        width: 95%;
+        font-family: sans-serif;
+        padding: 2px 5px;
+        font-size: 1.13rem;
+        outline: none;
+        border: 1px solid gainsboro;
+      }
+      .search-wraper input:focus {
+        box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.603);
+        border-color: rgb(109, 238, 255);
+      }
+      .src-btn:hover {
+        background-color: rgb(236, 235, 235);
+      }
+      .menu-cont a {
+        text-decoration: none;
+        padding: 5px 10px;
+        font-size: 1.4rem;
+        color: whitesmoke;
+        font-weight: 600;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .active {
+        background-color: rgb(231, 56, 56);
+      }
+      main {
+        width: 100%;
+        height: 200vh;
+      }
+      .ham {
+        font-size: 2rem;
+        color: white;
+        padding: 5px;
+        display: none;
+        cursor: pointer;
+      }
+      @media screen and (max-width: 1200px) {
+        .menu-cont a {
+          font-size: 1rem;
+        }
+        .ham {
+          display: block;
+        }
+        .search {
+          width: 50%;
+        }
+        .search-wraper input {
+          font-size: 1.13rem;
+        }
+        .search-wraper .src-btn {
+          font-size: 0.7rem;
+        }
+        .menu-cont {
+          position: absolute;
+          left: -100%;
+          top: 70px;
+          background-color: rgba(168, 255, 209, 0.561);
+          flex-direction: column;
+          width: 100%;
+          height: 50vh;
+          justify-content: space-around;
+        }
+        .menu-cont a {
+          width: 100%;
+          height: 100%;
+          font-size: 1.4rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        main {
+          background-color: rgb(99, 71, 255);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <header class="flex">
+        <div class="logo">
+          <img
+            src="https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png"
+            alt=""
+          />
+        </div>
+        <div class="search">
+          <div class="search-wraper flex">
+            <input type="text" name="" id="" placeholder="Search" />
+            <i class="fas fa-search src-btn"></i>
+          </div>
+        </div>
+        <nav>
+          <div class="menu-cont flex">
+            <a href="#" class="active">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </nav>
+        <i class="fas fa-bars ham"></i>
+      </header>
+      <main>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+        odio voluptatum. Illo doloremque assumenda alias reprehenderit unde
+        voluptatibus ad perferendis quam? Atque magni nostrum officiis quasi
+        quibusdam ea repellendus ratione!
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
