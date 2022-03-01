@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .background {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: absolute;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.644);
+        }
+
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            width: 500px;
+            height: 500px;
+            background-color: rgba(0, 119, 255, 0.308);
+            backdrop-filter: blur(45px);
+            border-radius: 20px;
+            padding: 12px;
+        }
+
+        .input {
+            outline: none;
+            background-color: transparent;
+            width: 40%;
+            padding: 6px 12px;
+            color: white;
+            letter-spacing: 1px;
+            transition: 0.5s ease;
+            border-radius: 18px;
+            border: 2px solid skyblue;
+        }
+
+        .box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box label {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.3rem;
+
+        }
+
+        @keyframes fil {
+            from {
+
+                filter: hue-rotate(0deg);
+            }
+
+            to {
+
+                filter: hue-rotate(360deg);
+            }
+
+        }
+
+        button[type="submit"] {
+            padding: 5px 10px;
+            border: 3px solid rgb(98, 219, 82);
+            background-image: linear-gradient(90deg, rgb(236, 0, 0), rgb(182, 2, 137), green,white);
+            color: rgb(0, 0, 0);
+            backdrop-filter: blur(20px);
+            color: white;
+            animation: fil 1s ease 0s infinite alternate;
+            border-radius: 15px;
+            width: 30%;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: rgb(0, 255, 191);
+        }
+
+        .input:focus,
+        .input:valid {
+            width: 60%;
+            border-color: greenyellow;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid red;
+            background-color: aqua;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <video class="background" autoplay muted>
+            <source src="./images/myvideo.mp4">
+        </video>
+        <div class="container">
+            <div class="span">
+                <div class="main">
+                    <form action="" method="post">
+                        <div class="box">
+                            <label for="">Email</label>
+                            <input type="text" name="email" class="input" id="" required="">
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <button type="submit">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

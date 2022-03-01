@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;  
+            align-items: baseline;     /*vertical*/     
+            justify-content: space-evenly; /*horizantal*/
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            margin-top: 4px;
+        }
+
+        @keyframes moveme {
+            0% {
+                background-color: blueviolet;
+                left: 0;
+            }
+
+            100% {
+                background-color: aqua;
+                left: 90%;
+            }
+        }
+
+        .container {
+            background-color: rgb(158, 156, 153);
+            padding: 10px;
+        }
+
+        .container .box:nth-child(1) {
+            background-color: aquamarine;
+            transition: 1s linear;
+            position: relative;
+            animation:  2s linear 0s infinite;
+            animation-direction: alternate;
+        }
+
+        .container .box:nth-child(1):hover {
+            /* background-color: rgb(255, 246, 127);
+            width: 150px;
+            height: 150px; */
+            /* transform:; */
+        }
+
+        .container .box:nth-child(2) {
+            background-color: rebeccapurple;
+            position: relative;
+            flex-basis: 150px;
+            animation:  2s ease 0s infinite;
+            animation-direction: alternate;
+        }
+
+        .container .box:nth-child(3) {
+            background-color: bisque;
+            position: relative;
+            animation:  2s ease-in 0s infinite;
+            animation-direction: alternate;
+        }
+
+        .container .box:nth-child(4) {
+            background-color: yellowgreen;
+            position: relative;
+            animation:  2s ease-out 0s infinite;
+            animation-direction: alternate;
+        }
+
+        .container .box:nth-child(5) {
+            background-color: lavender;
+            position: relative;
+            animation:  2s ease-in-out 0s infinite;
+            animation-direction: alternate;
+        }
+
+        .container .box:nth-child(6) {
+            background-color: limegreen;
+            position: relative;
+            animation:  2s linear 0s infinite;
+            animation-direction: alternate;
+        }
+
+        .cont {
+            height: 400vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="cont"></div>
+</body>
+
+</html>
